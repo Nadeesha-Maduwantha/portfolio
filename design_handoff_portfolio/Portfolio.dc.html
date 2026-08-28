@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <link rel="preconnect" href="https://fonts.googleapis.com"></link>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet"></link>
+  <style>
+    body { margin: 0; background: #12141a; }
+    ::selection { background: #39ff9450; }
+    a { color: #39ff94; text-decoration: none; }
+    a:hover { color: #6dffb3; }
+    @keyframes blink { 0%, 50% { opacity: 1; } 51%, 100% { opacity: 0; } }
+    @keyframes fadeUp { from { opacity: 0; transform: translateY(14px); } to { opacity: 1; transform: translateY(0); } }
+  </style>
+</helmet>
+
+<div style="background:#12141a; background-image:radial-gradient(circle, #ffffff0a 1px, transparent 1px); background-size:28px 28px; color:#c9d1d9; font-family:'Inter',sans-serif; min-height:100vh;">
+
+  <!-- NAV -->
+  <nav style="position:sticky; top:0; z-index:50; display:flex; align-items:center; justify-content:space-between; padding:18px 6vw; background:#12141ad9; backdrop-filter:blur(8px); border-bottom:1px solid #ffffff14;">
+    <a href="#hero" style="font-family:'JetBrains Mono',monospace; font-weight:700; color:#e6edf3; font-size:17px;">nadeesha<span style="color:#39ff94;">.dev</span></a>
+    <div style="display:flex; gap:28px; align-items:center;" class="nav-links">
+      <a href="#about" style="color:#9aa4b2; font-family:'JetBrains Mono',monospace; font-size:14px;">01.about</a>
+      <a href="#skills" style="color:#9aa4b2; font-family:'JetBrains Mono',monospace; font-size:14px;">02.skills</a>
+      <a href="#projects" style="color:#9aa4b2; font-family:'JetBrains Mono',monospace; font-size:14px;">03.projects</a>
+      <a href="#education" style="color:#9aa4b2; font-family:'JetBrains Mono',monospace; font-size:14px;">04.education</a>
+      <a href="#contact" style="color:#9aa4b2; font-family:'JetBrains Mono',monospace; font-size:14px;">05.contact</a>
+      <a href="#" style="border:1px solid #39ff9460; padding:7px 14px; border-radius:4px; color:#39ff94; font-family:'JetBrains Mono',monospace; font-size:13px;">resume.pdf</a>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section id="hero" style="min-height:88vh; display:flex; flex-direction:column; justify-content:center; padding:0 6vw; max-width:1100px;">
+    <p style="font-family:'JetBrains Mono',monospace; color:#39ff94; font-size:16px; margin:0 0 18px; animation:fadeUp .6s ease both;">
+      <span style="color:#6b7280;">$</span> whoami
+    </p>
+    <h1 style="font-family:'JetBrains Mono',monospace; font-size:clamp(36px,6vw,64px); font-weight:700; color:#e6edf3; margin:0 0 14px; line-height:1.1; animation:fadeUp .6s ease .1s both;">
+      Nadeesha Maduwantha
+    </h1>
+    <h2 style="font-family:'JetBrains Mono',monospace; font-size:clamp(18px,2.4vw,26px); font-weight:500; color:#9aa4b2; margin:0 0 22px; animation:fadeUp .6s ease .2s both;">
+      IT Undergraduate <span style="color:#39ff94;">|</span> Aspiring DevOps Engineer
+    </h2>
+    <p style="font-size:17px; color:#9aa4b2; max-width:560px; margin:0 0 36px; line-height:1.7; animation:fadeUp .6s ease .3s both;">
+      Building reliable systems and automating the boring parts. Currently exploring cloud infrastructure, CI/CD pipelines, and clean backend architecture.
+    </p>
+    <div style="display:flex; gap:16px; flex-wrap:wrap; animation:fadeUp .6s ease .4s both;">
+      <a href="#projects" style="background:#39ff94; color:#0d0f13; font-weight:600; font-family:'JetBrains Mono',monospace; padding:13px 26px; border-radius:4px; font-size:15px;">View Projects</a>
+      <a href="#contact" style="border:1px solid #ffffff2a; color:#e6edf3; font-weight:500; font-family:'JetBrains Mono',monospace; padding:13px 26px; border-radius:4px; font-size:15px;">Contact Me</a>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" style="padding:100px 6vw; max-width:1100px; border-top:1px solid #ffffff10;">
+    <p style="font-family:'JetBrains Mono',monospace; color:#6b7280; font-size:14px; margin:0 0 8px;">01</p>
+    <h3 style="font-family:'JetBrains Mono',monospace; font-size:28px; color:#e6edf3; margin:0 0 28px; display:flex; align-items:center; gap:12px;">
+      <span style="color:#39ff94;">&gt;</span>About
+    </h3>
+    <div style="background:#181b22; border:1px solid #ffffff14; border-radius:8px; padding:36px; max-width:720px;">
+      <p style="font-size:16px; line-height:1.8; color:#c9d1d9; margin:0;">
+        I'm a final-year undergraduate pursuing a degree in <strong style="color:#e6edf3;">Information Technology &amp; Management</strong> at the University of Colombo, with a growing focus on DevOps and systems engineering. I enjoy working close to infrastructure — automating deployments, containerizing applications, and understanding how software behaves at scale. Outside coursework, I contribute to small open-source tools and tinker with home-lab server setups.
+      </p>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" style="padding:100px 6vw; max-width:1100px; border-top:1px solid #ffffff10;">
+    <p style="font-family:'JetBrains Mono',monospace; color:#6b7280; font-size:14px; margin:0 0 8px;">02</p>
+    <h3 style="font-family:'JetBrains Mono',monospace; font-size:28px; color:#e6edf3; margin:0 0 28px;">
+      <span style="color:#39ff94;">&gt;</span>Skills
+    </h3>
+    <div style="background:#0d0f13; border:1px solid #ffffff14; border-radius:8px; overflow:hidden;">
+      <div style="display:flex; align-items:center; gap:8px; padding:12px 18px; background:#181b22; border-bottom:1px solid #ffffff14;">
+        <span style="width:11px; height:11px; border-radius:50%; background:#ff5f56;"></span>
+        <span style="width:11px; height:11px; border-radius:50%; background:#ffbd2e;"></span>
+        <span style="width:11px; height:11px; border-radius:50%; background:#27c93f;"></span>
+        <span style="font-family:'JetBrains Mono',monospace; font-size:13px; color:#6b7280; margin-left:8px;">skills.yaml</span>
+      </div>
+      <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); gap:0;">
+        <sc-for list="{{ skillGroups }}" as="group" hint-placeholder-count="4">
+          <div style="padding:26px 28px; border-right:1px solid #ffffff10; border-bottom:1px solid #ffffff10;">
+            <p style="font-family:'JetBrains Mono',monospace; color:#39ff94; font-size:14px; margin:0 0 14px;">{{ group.name }}:</p>
+            <div style="display:flex; flex-wrap:wrap; gap:8px;">
+              <sc-for list="{{ group.items }}" as="item" hint-placeholder-count="4">
+                <span style="font-family:'JetBrains Mono',monospace; font-size:13px; color:#c9d1d9; background:#ffffff0c; border:1px solid #ffffff16; padding:5px 11px; border-radius:4px;">{{ item }}</span>
+              </sc-for>
+            </div>
+          </div>
+        </sc-for>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" style="padding:100px 6vw; max-width:1100px; border-top:1px solid #ffffff10;">
+    <p style="font-family:'JetBrains Mono',monospace; color:#6b7280; font-size:14px; margin:0 0 8px;">03</p>
+    <h3 style="font-family:'JetBrains Mono',monospace; font-size:28px; color:#e6edf3; margin:0 0 28px;">
+      <span style="color:#39ff94;">&gt;</span>Projects
+    </h3>
+    <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(320px,1fr)); gap:24px;">
+      <sc-for list="{{ projects }}" as="proj" hint-placeholder-count="3">
+        <div style="background:#181b22; border:1px solid #ffffff14; border-radius:8px; overflow:hidden; display:flex; flex-direction:column;">
+          <div style="display:flex; align-items:center; gap:8px; padding:12px 16px; background:#0d0f13; border-bottom:1px solid #ffffff14;">
+            <span style="width:10px; height:10px; border-radius:50%; background:#ff5f56;"></span>
+            <span style="width:10px; height:10px; border-radius:50%; background:#ffbd2e;"></span>
+            <span style="width:10px; height:10px; border-radius:50%; background:#27c93f;"></span>
+            <span style="font-family:'JetBrains Mono',monospace; font-size:12px; color:#6b7280; margin-left:6px;">{{ proj.file }}</span>
+          </div>
+          <div style="padding:24px; flex:1; display:flex; flex-direction:column;">
+            <h4 style="font-family:'JetBrains Mono',monospace; font-size:18px; color:#e6edf3; margin:0 0 10px;">{{ proj.title }}</h4>
+            <p style="font-size:14.5px; color:#9aa4b2; line-height:1.65; margin:0 0 18px; flex:1;">{{ proj.description }}</p>
+            <div style="display:flex; flex-wrap:wrap; gap:7px; margin-bottom:18px;">
+              <sc-for list="{{ proj.stack }}" as="tech" hint-placeholder-count="3">
+                <span style="font-family:'JetBrains Mono',monospace; font-size:12px; color:#39ff94; background:#39ff9414; padding:4px 9px; border-radius:4px;">{{ tech }}</span>
+              </sc-for>
+            </div>
+            <div style="display:flex; gap:18px; font-family:'JetBrains Mono',monospace; font-size:13px;">
+              <a href="{{ proj.githubUrl }}">GitHub &#8599;</a>
+              <a href="{{ proj.demoUrl }}">Live Demo &#8599;</a>
+            </div>
+          </div>
+        </div>
+      </sc-for>
+    </div>
+  </section>
+
+  <!-- EDUCATION -->
+  <section id="education" style="padding:100px 6vw; max-width:1100px; border-top:1px solid #ffffff10;">
+    <p style="font-family:'JetBrains Mono',monospace; color:#6b7280; font-size:14px; margin:0 0 8px;">04</p>
+    <h3 style="font-family:'JetBrains Mono',monospace; font-size:28px; color:#e6edf3; margin:0 0 28px;">
+      <span style="color:#39ff94;">&gt;</span>Education
+    </h3>
+    <div style="background:#181b22; border:1px solid #ffffff14; border-radius:8px; padding:32px; max-width:720px; position:relative; border-left:3px solid #39ff94;">
+      <p style="font-family:'JetBrains Mono',monospace; color:#39ff94; font-size:13px; margin:0 0 6px;">2022 &#8212; 2026</p>
+      <h4 style="font-size:19px; color:#e6edf3; margin:0 0 6px; font-weight:600;">BSc (Hons) Information Technology &amp; Management</h4>
+      <p style="color:#9aa4b2; font-size:15px; margin:0 0 18px;">University of Colombo School of Computing</p>
+      <p style="font-family:'JetBrains Mono',monospace; color:#6b7280; font-size:13px; margin:0 0 10px;">relevant_coursework:</p>
+      <div style="display:flex; flex-wrap:wrap; gap:8px;">
+        <sc-for list="{{ coursework }}" as="course" hint-placeholder-count="5">
+          <span style="font-family:'JetBrains Mono',monospace; font-size:13px; color:#c9d1d9; background:#ffffff0c; border:1px solid #ffffff16; padding:5px 11px; border-radius:4px;">{{ course }}</span>
+        </sc-for>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" style="padding:100px 6vw 140px; max-width:1100px; border-top:1px solid #ffffff10;">
+    <p style="font-family:'JetBrains Mono',monospace; color:#6b7280; font-size:14px; margin:0 0 8px;">05</p>
+    <h3 style="font-family:'JetBrains Mono',monospace; font-size:28px; color:#e6edf3; margin:0 0 18px;">
+      <span style="color:#39ff94;">&gt;</span>Contact
+    </h3>
+    <p style="color:#9aa4b2; font-size:16px; max-width:520px; margin:0 0 32px; line-height:1.7;">
+      Open to internship and graduate opportunities in DevOps, cloud, and systems engineering. Feel free to reach out.
+    </p>
+    <div style="display:flex; flex-wrap:wrap; gap:16px;">
+      <a href="mailto:nadeesha.maduwantha@example.com" style="display:flex; align-items:center; gap:10px; border:1px solid #ffffff2a; padding:12px 20px; border-radius:6px; font-family:'JetBrains Mono',monospace; font-size:14px; color:#e6edf3;">
+        <span style="color:#39ff94;">&#9993;</span> nadeesha.maduwantha@example.com
+      </a>
+      <a href="https://github.com/nadeesha-example" style="display:flex; align-items:center; gap:10px; border:1px solid #ffffff2a; padding:12px 20px; border-radius:6px; font-family:'JetBrains Mono',monospace; font-size:14px; color:#e6edf3;">
+        <span style="color:#39ff94;">&#128187;</span> github.com/nadeesha
+      </a>
+      <a href="https://linkedin.com/in/nadeesha-example" style="display:flex; align-items:center; gap:10px; border:1px solid #ffffff2a; padding:12px 20px; border-radius:6px; font-family:'JetBrains Mono',monospace; font-size:14px; color:#e6edf3;">
+        <span style="color:#39ff94;">&#128279;</span> linkedin.com/in/nadeesha
+      </a>
+    </div>
+  </section>
+
+  <footer style="padding:28px 6vw; border-top:1px solid #ffffff10; text-align:center;">
+    <p style="font-family:'JetBrains Mono',monospace; color:#6b7280; font-size:13px; margin:0;">// built by Nadeesha Maduwantha &#8212; {{ year }}</p>
+  </footer>
+</div>
+
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  renderVals() {
+    return {
+      year: new Date().getFullYear(),
+      skillGroups: [
+        { name: 'languages', items: ['Java', 'Python', 'JavaScript', 'C', 'Bash'] },
+        { name: 'devops_tools', items: ['Docker', 'Kubernetes', 'Jenkins', 'GitHub Actions', 'Terraform'] },
+        { name: 'databases', items: ['MySQL', 'PostgreSQL', 'MongoDB', 'Redis'] },
+        { name: 'frameworks', items: ['Node.js', 'Express', 'React', 'Spring Boot'] },
+      ],
+      projects: [
+        {
+          file: 'ci-cd-pipeline.yml',
+          title: 'Automated CI/CD Pipeline',
+          description: 'End-to-end pipeline that builds, tests, and deploys a containerized app to a Kubernetes cluster on every push.',
+          stack: ['Docker', 'Jenkins', 'Kubernetes', 'AWS'],
+          githubUrl: 'https://github.com/nadeesha-example/ci-cd-pipeline',
+          demoUrl: '#',
+        },
+        {
+          file: 'infra-as-code.tf',
+          title: 'Infrastructure as Code Toolkit',
+          description: 'Terraform modules for provisioning reproducible cloud environments with automated cost and drift checks.',
+          stack: ['Terraform', 'AWS', 'Python'],
+          githubUrl: 'https://github.com/nadeesha-example/infra-as-code',
+          demoUrl: '#',
+        },
+        {
+          file: 'task-tracker.js',
+          title: 'Team Task Tracker',
+          description: 'Full-stack task management app with real-time updates, built to practice REST API design and database modeling.',
+          stack: ['React', 'Node.js', 'PostgreSQL'],
+          githubUrl: 'https://github.com/nadeesha-example/task-tracker',
+          demoUrl: 'https://task-tracker-example.vercel.app',
+        },
+      ],
+      coursework: ['Database Systems', 'Computer Architecture', 'Operating Systems', 'Networking', 'Cloud Computing', 'Software Engineering'],
+    };
+  }
+}
+
+</script>
+</body>
+</html>
