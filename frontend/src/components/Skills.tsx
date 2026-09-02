@@ -6,9 +6,9 @@ export default function Skills() {
   return (
     <section
       id="skills"
-      className="py-[100px] px-[6vw] max-w-[1100px] border-t border-[#ffffff10]"
+      className="py-[100px] px-[6vw] max-w-[1100px] mx-auto border-t border-[#ffffff10]"
     >
-      <SectionHeading number="02" title="Skills" />
+      <SectionHeading title="Skills" />
       <div className="bg-panel-dark border border-border-subtle rounded-lg overflow-hidden">
         <div className="flex items-center gap-2 px-[18px] py-3 bg-panel border-b border-border-subtle">
           <TrafficLights />
@@ -16,7 +16,7 @@ export default function Skills() {
             skills.yaml
           </span>
         </div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 items-start">
           {skillGroups.map((group) => (
             <div
               key={group.name}

@@ -6,14 +6,18 @@ export default function Projects() {
   return (
     <section
       id="projects"
-      className="py-[100px] px-[6vw] max-w-[1100px] border-t border-[#ffffff10]"
+      className="py-[100px] px-[6vw] max-w-[1100px] mx-auto border-t border-[#ffffff10]"
     >
-      <SectionHeading number="03" title="Projects" />
+      <SectionHeading title="Projects" />
       <div className="grid gap-6 [grid-template-columns:repeat(auto-fit,minmax(320px,1fr))]">
-        {projects.map((proj) => (
+        {projects.map((proj, i) => (
           <div
             key={proj.file}
-            className="bg-panel border border-border-subtle rounded-lg overflow-hidden flex flex-col"
+            className={`bg-panel border border-border-subtle rounded-lg overflow-hidden flex flex-col${
+              i === projects.length - 1 && projects.length % 2 !== 0
+                ? " sm:col-span-2"
+                : ""
+            }`}
           >
             <div className="flex items-center gap-2 px-4 py-3 bg-panel-dark border-b border-border-subtle">
               <TrafficLights size={10} />
@@ -39,18 +43,22 @@ export default function Projects() {
                 ))}
               </div>
               <div className="flex gap-[18px] font-mono text-[13px]">
-                <a
-                  href={proj.githubUrl}
-                  className="text-accent hover:text-accent-hover transition-colors"
-                >
-                  GitHub ↗
-                </a>
-                <a
-                  href={proj.demoUrl}
-                  className="text-accent hover:text-accent-hover transition-colors"
-                >
-                  Live Demo ↗
-                </a>
+                {proj.githubUrl && (
+                  <a
+                    href={proj.githubUrl}
+                    className="text-accent hover:text-accent-hover transition-colors"
+                  >
+                    GitHub ↗
+                  </a>
+                )}
+                {proj.demoUrl && (
+                  <a
+                    href={proj.demoUrl}
+                    className="text-accent hover:text-accent-hover transition-colors"
+                  >
+                    Live Demo ↗
+                  </a>
+                )}
               </div>
             </div>
           </div>

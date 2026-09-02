@@ -15,9 +15,9 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Nadeesha Maduwantha — IT Undergraduate",
+  title: "Nadeesha Maduwantha — Software Engineering Undergraduate",
   description:
-    "Portfolio of Nadeesha Maduwantha, IT undergraduate and aspiring DevOps engineer.",
+    "Portfolio of Nadeesha Maduwantha, a third-year IT & Management undergraduate at the University of Moratuwa seeking a Software Engineering internship.",
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {

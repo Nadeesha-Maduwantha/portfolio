@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, type FormEvent } from "react";
+import { profile } from "@/lib/data";
 
 type Status = "idle" | "submitting" | "success" | "error";
 
@@ -55,7 +56,7 @@ export default function ContactForm() {
     >
       <div className="flex items-center gap-2 -mt-2 mb-1">
         <span className="font-mono text-text-faint text-[13px]">
-          $ send-message --to nadeesha
+          $ send-message --to {profile.handle}
         </span>
       </div>
       <input

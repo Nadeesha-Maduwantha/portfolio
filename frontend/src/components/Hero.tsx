@@ -5,7 +5,7 @@ export default function Hero() {
   return (
     <section
       id="hero"
-      className="min-h-[88vh] flex flex-col md:flex-row items-center gap-12 justify-center px-[6vw] max-w-[1100px]"
+      className="min-h-[88vh] flex flex-col md:flex-row items-center gap-12 justify-center px-[6vw] max-w-[1100px] mx-auto"
     >
       <div className="flex-1">
         <p

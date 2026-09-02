@@ -6,9 +6,9 @@ export default function Contact() {
   return (
     <section
       id="contact"
-      className="pt-[100px] pb-[140px] px-[6vw] max-w-[1100px] border-t border-[#ffffff10]"
+      className="pt-[100px] pb-[140px] px-[6vw] max-w-[1100px] mx-auto border-t border-[#ffffff10]"
     >
-      <SectionHeading number="05" title="Contact" />
+      <SectionHeading title="Contact" />
       <p className="text-text-muted text-base max-w-[520px] mb-8 leading-[1.7]">
         {contact.blurb}
       </p>

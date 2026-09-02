@@ -5,9 +5,9 @@ export default function Education() {
   return (
     <section
       id="education"
-      className="py-[100px] px-[6vw] max-w-[1100px] border-t border-[#ffffff10]"
+      className="py-[100px] px-[6vw] max-w-[1100px] mx-auto border-t border-[#ffffff10]"
     >
-      <SectionHeading number="04" title="Education" />
+      <SectionHeading title="Education" />
       <div className="bg-panel border border-border-subtle border-l-[3px] border-l-accent rounded-lg p-8 max-w-[720px]">
         <p className="font-mono text-accent text-[13px] mb-1.5">
           {education.dateRange}
